@@ -1,13 +1,13 @@
 import { formatTimerInfo } from "../utils/formatTimerInfo";
 
 describe("formatTimeToTimestamp test", () => {
-  it("should return 'This is not a time from past' text if time is not from the past'", () => {
+  it("should return 'This is not time from past' text if time is not from the past'", () => {
     const currentDate = new Date();
     currentDate.setHours(20, 0, 0);
     const lastSeenDate = new Date();
     lastSeenDate.setHours(23, 0, 0);
 
-    const expected = "This is not a time from past";
+    const expected = "This is not time from past";
 
     const result = formatTimerInfo(
       lastSeenDate.getTime(),
