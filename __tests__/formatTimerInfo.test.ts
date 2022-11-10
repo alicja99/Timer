@@ -1,6 +1,6 @@
 import { formatTimerInfo } from "../utils/formatTimerInfo";
 
-describe("formatTimeToTimestamp test", () => {
+describe("formatTimerInfo test", () => {
   it("should return 'This is not time from past' text if time is not from the past'", () => {
     const currentDate = new Date();
     currentDate.setHours(20, 0, 0);
